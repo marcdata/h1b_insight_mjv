@@ -1,12 +1,3 @@
-class SlimRow(object):
-    """
-    Simple data contract, data transfer object.
-    """
-        
-    def __init__(self, certStatus, stateCode, occupation):
-        self.CertStatus = certStatus
-        self.State = stateCode
-        self.Occupation = occupation
 
 class RowExtractor(object):
     """
@@ -25,6 +16,15 @@ class RowExtractor(object):
 
         return SlimRow(lineByParts[self.CertCol], lineByParts[self.StateCol], lineByParts[self.OccupationCol])
 
+class SlimRow(object):
+    """
+    Simple data contract, data transfer object.
+    """
+        
+    def __init__(self, certStatus, stateCode, occupation):
+        self.CertStatus = certStatus
+        self.State = stateCode
+        self.Occupation = occupation
 
 # Pulled out from static class method to just a method.
 def BuildRowExtractorFromHeaderRow(headerRow):

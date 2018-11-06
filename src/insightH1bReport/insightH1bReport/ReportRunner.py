@@ -3,7 +3,7 @@ import sys
 
 from ReportDataContracts import StateInfo, OccupationInfo, ReportSummaryData
 from ReportWriter import ReportWriter
-from H1bRawFileReader import H1bRawFileReader
+from ReportReader.H1bRawFileReader import H1bRawFileReader
 #from ReportReader.H1bRawFileReader import H1bRawFileReader
 
 def main(argv):
