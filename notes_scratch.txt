@@ -1,0 +1,7 @@
+notes.txt
+
+
+    # inputfile = r'C:\xprojects\insight-data\resampled\h1b_fy_2015_n20.csv'
+	
+	
+	
