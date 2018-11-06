@@ -12,7 +12,7 @@
     <Name>insightH1bReport</Name>
     <RootNamespace>insightH1bReport</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>C:\xprojects\insight-data\resampled\h1b_fy_2015_n20.csv occupationsOut.txt statesOut.txt</CommandLineArguments>
+    <CommandLineArguments>C:\xprojects\insight-data\resampled\h1b_fy_2015_n20.csv output\occupationsOut.txt output\statesOut.txt</CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
