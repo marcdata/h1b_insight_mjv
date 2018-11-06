@@ -1,10 +1,8 @@
-
 import sys
 
 from ReportDataContracts import StateInfo, OccupationInfo, ReportSummaryData
 from ReportWriter import ReportWriter
 from ReportReader.H1bRawFileReader import H1bRawFileReader
-#from ReportReader.H1bRawFileReader import H1bRawFileReader
 
 def main(argv):
     inputfile = ''
@@ -17,6 +15,7 @@ def main(argv):
         sys.exit()
     if(len(args) != 4):
         print('usage: reportrunner.py <inputfile>  <occupationsoutputfile> <statessoutputfile>')
+        sys.exit()
 
     inputfile = args[1]
     occupationsOutfile = args[2]
@@ -33,7 +32,7 @@ def RunReport(h1bRawDataFilename, occupationsOutfile, statesOutfile):
     Run the report; read from the semicolon separated file, and write the output files.
     """
 
-    # do data file reader / GetSummaryData()
+    # read from file into a summary data object
     reportSummaryData = H1bRawFileReader(h1bRawDataFilename).GetSummaryData()
 
     reportWriter = ReportWriter()

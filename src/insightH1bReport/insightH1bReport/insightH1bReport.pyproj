@@ -38,18 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ReportReader\" />
-    <Folder Include="ReportReader\__pycache__\" />
     <Folder Include="Tests\" />
-    <Folder Include="Tests\__pycache__\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ReportReader\__pycache__\H1bRawFileReader.cpython-36.pyc" />
-    <Content Include="ReportReader\__pycache__\RowExtractor.cpython-36.pyc" />
-    <Content Include="ReportReader\__pycache__\SlimRow.cpython-36.pyc" />
-    <Content Include="Tests\__pycache__\DataContractTests.cpython-36-PYTEST.pyc" />
-    <Content Include="Tests\__pycache__\pyunittests.cpython-36-PYTEST.pyc" />
-    <Content Include="Tests\__pycache__\ReportReaderTests.cpython-36-PYTEST.pyc" />
-    <Content Include="Tests\__pycache__\ReportWriterTests.cpython-36-PYTEST.pyc" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
