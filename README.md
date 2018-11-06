@@ -26,7 +26,7 @@ Broadly, separation of concerns was observed by separating the code into two mai
 
 # Run instructions
 
-usage: reportrunner.py <inputfile> <occupationsoutputfile> <statessoutputfile>
+usage: reportrunner.py inputfile occupationsoutputfile statessoutputfile
 
 From the src folder:
 python ./src/insightH1bReport/insightH1bReport/ReportRunner.py ./input/h1b_input.csv ./output/top_10_occupations.txt ./output/top_10_states.txt
@@ -40,6 +40,8 @@ As such, those unit tests can be performed with the following type of commands:
 python -m pytest Tests/DataContractTests.py  
 python -m pytest Tests/ReportReaderTests.py  
 python -m pytest Tests/ReportWriterTests.py  
+
+Tests mostly focus on formatting requirements and other particulars specified in the project requirements.  
 
 # Notes on style
 
