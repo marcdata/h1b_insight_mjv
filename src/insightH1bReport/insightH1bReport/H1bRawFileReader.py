@@ -1,6 +1,6 @@
 from ReportDataContracts import ReportSummaryData, StateInfo, OccupationInfo
-from ReportReader.RowExtractor import RowExtractor, SlimRow
-from ReportReader.RowExtractor import BuildRowExtractorFromHeaderRow
+from RowExtractor import RowExtractor, SlimRow
+from RowExtractor import BuildRowExtractorFromHeaderRow
 
 class H1bRawFileReader(object):
     """
